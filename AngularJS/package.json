@@ -1,0 +1,28 @@
+{
+  "name": "epistula",
+  "version": "1.0.0",
+  "description": "Epistula - AngularJS version.",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xPetrus/Epistula.git"
+  },
+  "keywords": [
+    "contact",
+    "form"
+  ],
+  "author": "Petrus Matthaus Girnus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xPetrus/Epistula/issues"
+  },
+  "homepage": "https://github.com/xPetrus/Epistula#readme",
+  "devDependencies": {
+    "angular": "^1.4.1",
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4"
+  }
+}
