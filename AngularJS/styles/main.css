@@ -1,0 +1,17 @@
+/* line 1, ../scss/main.scss */
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: #00FFCC;
+  font-family: "calibre";
+}
+
+/* line 8, ../scss/main.scss */
+.description {
+  font-size: 18px;
+}
+
+/* line 12, ../scss/main.scss */
+#container {
+  border: 1px solid red;
+}
