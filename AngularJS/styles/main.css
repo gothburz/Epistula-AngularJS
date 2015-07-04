@@ -1,17 +1,42 @@
-/* line 1, ../scss/main.scss */
-body {
-  margin: 0 auto;
-  padding: 0 auto;
-  background-color: #00FFCC;
-  font-family: "calibre";
+/* line 2, ../scss/main.scss */
+body, html {
+  height: 100%;
 }
 
-/* line 8, ../scss/main.scss */
+/* line 6, ../scss/main.scss */
+body {
+  background-color: #ee5652;
+  font-family: "calibre";
+  padding-bottom: -50px;
+}
+
+/* line 12, ../scss/main.scss */
+.footer {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+/* line 21, ../scss/main.scss */
 .description {
   font-size: 18px;
 }
 
-/* line 12, ../scss/main.scss */
-#container {
-  border: 1px solid red;
+/* line 26, ../scss/main.scss */
+.wrapper {
+  background-color: #f0f0f0;
+}
+
+/* line 30, ../scss/main.scss */
+.body {
+  background-color: #fff;
+}
+
+/* line 34, ../scss/main.scss */
+.bottom-buttons {
+  margin-right: 16px;
+  margin-left: 4px;
 }
