@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Epistula - AngularJS</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	
+<!--header-->
+	<div class="navbar navbar navbar-inverse navbar-fixed-top">
+		<div class="container">	
+		</div>
+	</div>
+
+		<div class="jumbotron">
+			<center>
+				<h1>Epistula - AngularJS</h1>
+				<p>Contact form with AngularJS validation built with Bootstrap.</p>
+			<center>
+			<hr>
+		</div>
+	
+	<div class="container body" ng-app="validationApp" ng-controller="formController">
+		<form name="form" ng-submit="submitForm(form.$valid)" method="post" action="" role="form" class="form-horizontal" novalidate>
+		<br>
+			<!--Name Field-->
+			<div class="form-group" ng-class="{'has-error' : form.name.$invalid && !form.name.$pristine, 'has-success' : form.name.$valid && !form.name.$pristine }">
+				<div class="row">
+					<label for="name" class="col-sm-1 col-sm-offset-2 control-label"><span class="req">*</span>Name:</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control form-horizontal" id="name" name="name" ng-model="user.name" placeholder="Enter First & Last Name" required></input>
+						<p ng-show="form.name.$invalid && !form.name.$pristine" class="help-block"><span class="glyphicon glyphicon-remove"></span>Please enter a name.</p>
+                      	<p ng-show="form.name.$valid && !form.name.$pristine" class="help-block"><span class="glyphicon glyphicon-ok"></p>
+					</div>
+				</div>
+			</div>
+			<!--Email Field-->
+			<div class="form-group" ng-class="{'has-error' : form.email.$invalid && !form.email.$pristine, 'has-success' : form.email.$valid && !form.email.$pristine }" >
+				<div class="row">
+					<label for="email" class="col-sm-1 col-sm-offset-2 control-label"><span class="req">*</span>Email:</label>
+					<div class="col-sm-6">
+						<input type="email" class="form-control form-horizontal" id="email" name="email" ng-model="user.email" placeholder="Example@domain.com" required></input>
+						<p ng-show="form.email.$invalid && !form.email.$pristine" class="help-block"><span class="glyphicon glyphicon-remove"></span>Please enter a valid email</p>
+                      	<p ng-show="form.email.$valid && !form.email.$pristine" class="help-block"><span class="glyphicon glyphicon-ok"></p>
+					</div>
+				</div>
+			</div>
+			<!--Phone Field-->
+			<div class="form-group" ng-class="{'has-error' : form.phone.$invalid && !form.phone.$pristine, 'has-success' : form.phone.$valid && !form.phone.$pristine }">
+				<div class="row">
+					<label for="phone" class="col-sm-1 col-sm-offset-2 control-label">Phone:</label>
+					<div class="col-sm-6">
+						<input type="number" class="form-control form-horizontal" id="phone" name="phone" placeholder="Enter a #"></input>
+					</div>
+				</div>
+			</div>
+			<!--Message Field-->
+			<div class="form-group">
+				<div class="row">
+					<label for="message" class="col-sm-1 col-sm-offset-2 control-label">Message:</label>
+					<div class="col-sm-6">
+						<textarea class="form-control" rows="10" id="message" name="message" placeholder="Leave us a message!"></textarea>
+						<p><span class="req">*</span>Required Field</p>
+						<button type="reset" value="reset" class="btn btn-danger pull-right bottom-button1" ng-click="reset; form.$setPristine()" data-dismiss="form">Clear</button>
+						<button type="submit" value="send" class="btn btn-primary pull-right bottom-button1" ng-disabled="form.$invalid">Send</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<p class="navbar-text">Built by xPetrus</p>
+		</div>
+	</div>
+
+
+
+<!--scripts: vendor-->
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+<!--scripts: user-->
+	<script src="js/main.js"></script>
+</body>
+</html>

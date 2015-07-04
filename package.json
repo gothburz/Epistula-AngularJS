@@ -1,0 +1,31 @@
+{
+  "name": "epistula-angular",
+  "version": "1.0.0",
+  "description": "a simple contact form with validation through angular built with bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xPetrus/Epistula-AngularJS.git"
+  },
+  "keywords": [
+    "contact",
+    "angular",
+    "bootstrap",
+    "validation",
+    "form"
+  ],
+  "author": "Petrus Matthaus Girnus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xPetrus/Epistula-AngularJS/issues"
+  },
+  "homepage": "https://github.com/xPetrus/Epistula-AngularJS#readme",
+  "dependencies": {
+    "angular": "^1.4.1",
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4"
+  }
+}
