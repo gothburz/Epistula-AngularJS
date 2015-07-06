@@ -22,7 +22,7 @@
 		</div>
 	
 	<div class="container body" ng-app="validationApp" ng-controller="formController">
-		<form name="form" ng-submit="submitForm(form.$valid)" method="post" action="" role="form" class="form-horizontal" novalidate>
+		<form name="form" ng-submit="submitForm(form.$valid)" method="post" action="form_processor.php" role="form" class="form-horizontal" novalidate>
 		<br>
 			<!--Name Field-->
 			<div class="form-group" ng-class="{'has-error' : form.name.$invalid && !form.name.$pristine, 'has-success' : form.name.$valid && !form.name.$pristine }">
